@@ -32,9 +32,9 @@ python3 -m venv venv
 pip install -r requirements.txt
 
 python3 main.py
-# <Edit the creds.py with your own variables as given below>
-```
 
+```
+# Edit the creds.py with your own variables as given below
 ```python3
 class cred():
     BOT_TOKEN = "your bot token from botfather"
