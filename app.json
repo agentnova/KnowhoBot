@@ -1,0 +1,46 @@
+{
+  "name": "Knowho bot",
+  "description": "A telegram bot which gather information about an indian phone number(Gather results from both Truecaller and eyecon)"
+  "repository": "https://github.com/agentnova/KnowhoBot",
+  "logo": "https://raw.githubusercontent.com/agentnova/KnowhoBot/master/logo.jpg",
+  "keywords": ["Truecaller","telegram","telegram bot","bot","pyrogram","knowho bot","information gathering"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token from @Botfather",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "DB_URL": {
+      "description": "Your DATABASE url from firebase.google.com",
+      "value": ""
+    },
+    "T_AUTH": {
+      "description": "Your Truecaller auth_id from truecaller app request headers",
+      "value": ""
+    },
+    "E_AUTH": {
+      "description": "Your Eyecon auth_id from eyecon app request headers",
+      "value": ""
+    },
+    "E_AUTH_V": {
+      "description": "Your Eyecon e_auth_v value from eyecon app request headers",
+      "value": ""
+    },
+    "E_AUTH_C": {
+      "description": "Your Eyecon e_auth_c value from eyecon app request headers",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
