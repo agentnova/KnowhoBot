@@ -1,6 +1,6 @@
 {
   "name": "Knowho bot",
-  "description": "A telegram bot which gather information about an indian phone number(Gather results from both Truecaller and eyecon)"
+  "description": "A telegram bot which gather information about an indian phone number(Gather results from both Truecaller and eyecon)",
   "repository": "https://github.com/agentnova/KnowhoBot",
   "logo": "https://raw.githubusercontent.com/agentnova/KnowhoBot/master/logo.jpg",
   "keywords": ["Truecaller","telegram","telegram bot","bot","pyrogram","knowho bot","information gathering"],
