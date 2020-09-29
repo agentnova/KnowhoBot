@@ -34,7 +34,7 @@ pip install -r requirements.txt
 python3 main.py
 
 ```
-#### Edit the creds.py with your own variables as given below
+#### Dont forget to edit the creds.py with your own variables like below with your own values
 ```python3
 class cred():
     BOT_TOKEN = "your bot token from botfather"
