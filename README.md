@@ -4,12 +4,12 @@ Pluggable
 [Telegram](https://telegram.org) bot based on
 [Pyrogram](https://github.com/pyrogram/pyrogram).
 
-###About the bot
-```
-Simply the purpose of this bot is to gather information about a phone number(only indian numbers).
-Combined Results from Truecaller and eyecon app is provided.
-Saves your time...:-)
-```
+## About the bot
+
+>Simply the purpose of this bot is to gather information about a phone number(only indian numbers).
+>Combined Results from Truecaller and eyecon app is provided.
+>Saves your time...:-)
+
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -46,9 +46,6 @@ class cred():
     API_ID = "your api id from my.telegram.org!"       
     API_HASH = "your api hash from my.telegram.org!"   
     DB_URL = "your database url from google firebase"      
-
-    ####From Truecaller and Eyecon app request headers respectively########
-
     T_AUTH = "from telegram app request header"     
     E_AUTH = "from eyecon app request header"     
     E_AUTH_V= "from eyecon app request header"    
