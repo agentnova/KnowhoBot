@@ -1,0 +1,12 @@
+pyrogram
+requests
+tgcrypto
+crypto
+firebase
+gcloud
+pycryptodome
+python-jwt
+requests-toolbelt
+sseclient
+pytz
+python-dotenv
