@@ -49,29 +49,29 @@ def echo(client, message):
     frbsetrname = ""
     frbsetrmail = ""
     if num.isnumeric and len(num) == 10:
-        check_status = check(message.chat.id)
-        if check_status == "not yet":
-            tresponse = ""
-            try:
-                tresponse = truecaller_search(cred.T_AUTH,num)
-                restj = tresponse.json()
-                trslt = json.dumps(restj)
-                tjsonload = json.loads(trslt)
-                pq = ""
-                if "name" in tjsonload['data'][0]:
-                    if tjsonload['data'][0]['internetAddresses']:
-                        pq = f"\n\n**----••Truecaller says----**\n\nName : `{tjsonload['data'][0]['name']}`\nCarrier : `{tjsonload['data'][0]['phones'][0]['carrier']}` \nE-mail : {tjsonload['data'][0]['internetAddresses'][0]['id']}"
-                        frbsetrname = tjsonload['data'][0]['name']
-                        frbsetrmail = tjsonload['data'][0]['internetAddresses'][0]['id']
-                    elif not tjsonload['data'][0]['internetAddresses']:
-                        pq = f"\n\n**----••Truecaller says----**\n\nName : `{tjsonload['data'][0]['name']}`\nCarrier : `{tjsonload['data'][0]['phones'][0]['carrier']}`"
-                        frbsetrname = tjsonload['data'][0]['name']
-                else:
-                    pq = "\n\n**----••Truecaller says----**\n\nNo results found 🤦🏻‍♂️"
-                if tresponse.status_code == 429:
-                    pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomarrow 🤦🏻‍♂️"
-            except:
-                pass
+        # check_status = check(message.chat.id)
+        # print(check_status)
+        # if check_status == "not yet":
+        tresponse = ""
+
+        tresponse = truecaller_search(cred.T_AUTH,num)
+        print(tresponse)
+        restj = tresponse.json()
+        trslt = json.dumps(restj)
+        tjsonload = json.loads(trslt)
+        pq = ""
+        if "name" in tjsonload['data'][0]:
+            if tjsonload['data'][0]['internetAddresses']:
+                pq = f"\n\n**----••Truecaller says----**\n\nName : `{tjsonload['data'][0]['name']}`\nCarrier : `{tjsonload['data'][0]['phones'][0]['carrier']}` \nE-mail : {tjsonload['data'][0]['internetAddresses'][0]['id']}"
+                frbsetrname = tjsonload['data'][0]['name']
+                frbsetrmail = tjsonload['data'][0]['internetAddresses'][0]['id']
+            elif not tjsonload['data'][0]['internetAddresses']:
+                pq = f"\n\n**----••Truecaller says----**\n\nName : `{tjsonload['data'][0]['name']}`\nCarrier : `{tjsonload['data'][0]['phones'][0]['carrier']}`"
+                frbsetrname = tjsonload['data'][0]['name']
+        else:
+            pq = "\n\n**----••Truecaller says----**\n\nNo results found 🤦🏻‍♂️"
+        if tresponse.status_code == 429:
+            pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomarrow 🤦🏻‍♂️"
 
         response = eyecon_search(num)
         fbres = fb_search(num)
