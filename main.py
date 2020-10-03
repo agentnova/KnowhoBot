@@ -53,12 +53,12 @@ def echo(client, message):
         # print(check_status)
         # if check_status == "not yet":
         tresponse = ""
-
         tresponse = truecaller_search(cred.T_AUTH,num)
-        print(tresponse)
+        
         restj = tresponse.json()
         trslt = json.dumps(restj)
         tjsonload = json.loads(trslt)
+        print(tjsonload)
         pq = ""
         if "name" in tjsonload['data'][0]:
             if tjsonload['data'][0]['internetAddresses']:
