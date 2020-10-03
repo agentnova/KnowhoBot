@@ -53,13 +53,13 @@ def echo(client, message):
         # print(check_status)
         # if check_status == "not yet":
         tresponse = ""
-        print(cred.T_AUTH)
+        
         tresponse = truecaller_search(cred.T_AUTH,num)
         
         restj = tresponse.json()
         trslt = json.dumps(restj)
         tjsonload = json.loads(trslt)
-        print(tjsonload)
+        
         pq = ""
         if "name" in tjsonload['data'][0]:
             if tjsonload['data'][0]['internetAddresses']:
@@ -75,13 +75,18 @@ def echo(client, message):
             pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomarrow 🤦🏻‍♂️"
 
         response = eyecon_search(num)
+        print(num)
         fbres = fb_search(num)
         fbrslt = fbres.url.replace('https://graph.', '').replace('picture?width=600', '')
+        print("hi")
         if response:
+            print("hello")
             rslt = response.json()
+            print("hoi")
             if rslt:
                 temp = json.dumps(rslt).replace('[', '').replace(']', '')
                 jsonload = json.loads(temp)
+                print(jsonload)
                 yk = f"\n\n**----••Eyecon says----**\n\nName :`{jsonload['name']}`"
                 frbseyename = jsonload["name"]
                 if "facebook.com" in fbrslt:
