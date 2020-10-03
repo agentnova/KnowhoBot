@@ -79,10 +79,6 @@ def eyecon_search(num):
         "Host": "api.eyecon-app.com"
     }
     response = requests.post(url, headers=headers, timeout=5)
-    print(cred.E_AUTH_V)
-    print(cred.E_AUTH_C)
-    print(cred.E_AUTH)
-    print(response)
     return response
 
 def fb_search(num):
