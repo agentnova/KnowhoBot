@@ -13,6 +13,6 @@ class cred():
     ####From Truecaller and Eyecon app request headers respectively########
 
     T_AUTH = os.getenv("T_AUTH")      # Truecaller auth id CA
-    E_AUTH = os.getenv("F_AUTH")      # Eyecon auth id
+    E_AUTH = os.getenv("E_AUTH")      # Eyecon auth id
     E_AUTH_V=os.getenv("E_AUTH_V")    # Eyecon auth_v
     E_AUTH_C=os.getenv("E_AUTH_C")    # Eyecon auth_c
