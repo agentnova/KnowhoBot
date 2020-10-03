@@ -34,6 +34,11 @@ def stats(client, message):
 
 @app.on_message(filters.text)
 def echo(client, message):
+    actvt=""
+    actvt = firebase.get('/stats', 'total_searches')
+    data = {"total_searches": 1}
+    if not actvt:
+        firebase.put('/stats', 'total_searches', data)
     global pq
     pq = ""
     pro = client.send_message(chat_id=message.chat.id, text="Searching...", reply_to_message_id=message.message_id)
