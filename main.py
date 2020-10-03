@@ -53,6 +53,7 @@ def echo(client, message):
         # print(check_status)
         # if check_status == "not yet":
         tresponse = ""
+        print(cred.T_AUTH)
         tresponse = truecaller_search(cred.T_AUTH,num)
         
         restj = tresponse.json()
