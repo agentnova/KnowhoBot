@@ -22,7 +22,7 @@ Mozilla Public License for more details.
 #### The Easy Way
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/agentnova/KnowhoBot)
-<img src="https://github.com/agentnova/KnowhoBot/blob/master/images%20(1).jpg" width="100px"/>
+<img src="https://github.com/agentnova/KnowhoBot/blob/master/images%20(1).jpg" width="150px"/>
 
 
 
