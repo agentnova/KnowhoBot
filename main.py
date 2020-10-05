@@ -18,13 +18,13 @@ app = Client(
 def start(client, message):
     client.send_message(chat_id=message.chat.id,
                         text=f"`Hi` **{message.from_user.first_name}**\n `Enter the number to search...`",reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("About", callback_data="about")],
-             [InlineKeyboardButton("Source", callback_data="src")]]))
+            [[InlineKeyboardButton("About", callback_data="about"),
+             InlineKeyboardButton("Source", callback_data="src")]]))
     check_status = check(message.chat.id)
 
 @app.on_callback_query()
 def newbt(client,callback_query):
-    txt=callback_query.text
+    txt=callback_query.data
     if txt=="about":
         callback_query.message.edit(text=f"`Bot`            : [knowhobot](t.me/knowhobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
@@ -39,7 +39,7 @@ def about(client, message):
     client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,
                         text=f"`Bot`            : [knowhobot](t.me/knowhobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Give Feedback", url="t.me/agentnova")]]))
+            [[InlineKeyboardButton("Feedback", url="t.me/agentnova")]]))
 
 
 @app.on_message(filters.command(["log"]))
