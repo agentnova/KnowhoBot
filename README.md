@@ -22,7 +22,7 @@ Mozilla Public License for more details.
 #### The Easy Way
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/agentnova/KnowhoBot)
-[![watch](https://img.youtube.com/vi/n3OAebcVgR4/0.jpg)](https://www.youtube.com/watch?v=n3OAebcVgR4)
+<a href="#" class="button icon arrowright">Search</a>
 
 
 
