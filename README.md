@@ -22,7 +22,7 @@ Mozilla Public License for more details.
 #### The Easy Way
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/agentnova/KnowhoBot)
-<link href="social-media-buttons.min.css" rel="stylesheet">
+<link href="min.css" rel="stylesheet">
 <button class="ss-btn-twitter>Follow me on Twitter</button> 
 
 
