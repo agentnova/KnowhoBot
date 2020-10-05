@@ -25,7 +25,7 @@ Mozilla Public License for more details.
 
 #### Watch video
 
-<a href="https://youtu.be/n3OAebcVgR4"><img src="https://github.com/agentnova/KnowhoBot/blob/master/images%20(1).jpg" width="150px"/></a>
+<a href="https://youtu.be/n3OAebcVgR4"><img src="https://github.com/agentnova/KnowhoBot/blob/master/images%20(1)%7E2.jpg" width="150px"/></a>
 
 
 
