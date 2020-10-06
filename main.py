@@ -67,7 +67,7 @@ def echo(client, message):
     frbsetrname = ""
     frbsetrmail = ""
     if num.isnumeric and len(num) == 10:
-        pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomarrow 🤦🏻‍♂️"
+        pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomorrow 🤦🏻‍♂️"
         tresponse = ""
         try:
             tresponse = truecaller_search(cred.T_AUTH, num)
