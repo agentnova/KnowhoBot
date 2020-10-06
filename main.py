@@ -86,7 +86,7 @@ def echo(client, message):
                 else:
                     pq = "\n\n**----••Truecaller says----**\n\nNo results found 🤦🏻‍♂️"
             if tresponse.status_code == 429:
-                pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomarrow 🤦🏻‍♂️"
+                pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomorrow 🤦🏻‍♂️"
         except:
             pass
         response = eyecon_search(num)
