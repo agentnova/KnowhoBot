@@ -91,11 +91,7 @@ def echo(client, message):
             pass
         response = eyecon_search(num)
         fbres = fb_search(num)
-        o_fbrslt = fbres.url.replace('https://graph.', '').replace('picture?width=600', '')
-        p1,p2,p3=o_fbrslt.split("/")
-        fbrslt=p1+p2
-        
-
+        fbrslt = fbres.url.replace('https://graph.', '').replace('picture?width=600', '')
         if response:
 
             rslt = response.json()
