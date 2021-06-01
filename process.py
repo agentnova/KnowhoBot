@@ -26,7 +26,7 @@ def check(chatids):
             firebase.put('/users', chatid, data)
             out = "not yet"
         else:
-            if count > 5:
+            if count > 100000:
                 out = "limit reached"
             else:
                 count += 1
